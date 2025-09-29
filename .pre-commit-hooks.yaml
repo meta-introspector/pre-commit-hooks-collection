@@ -1,0 +1,8 @@
+# .pre-commit-hooks.yaml
+# This file defines the pre-commit hooks available in this repository.
+- id: vale
+  name: vale
+  entry: vale
+  language: system
+  files: \.(md|txt|rst|adoc)$ # Example files to check, adjust as needed
+  # This hook runs the Vale linter for prose.
